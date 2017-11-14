@@ -1,3 +1,22 @@
 <p>
   movie-search works!
 </p>
+<div>
+  <form (ngSubmit)="onSubmitMovieSearch(movieSearch)" #movieSearch="ngForm">
+      <h2>SEARCH A MOVIE </h2>
+      <div>
+        <label for="searcher">Title: </label>
+        <input type="text"  name="searcher" [(ngModel)]="searcher">
+      </div>
+      <button class="btn" type="submit" >Search</button>
+  </form>
+</div>
+
+<div *ngFor="let movie of movies">
+  <div>
+    <p>Title: {{movie.title}}</p>
+    <p>Release Date: {{movie.release_date}}</p>
+    <p>Episode: {{movie.episode_id}}</p>
+    <a [routerLink]="['/movies', movie.episode_id]">See movie details...</a>
+  </div>
+</div>
