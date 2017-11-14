@@ -1,3 +1,9 @@
 <p>
   characters-carousel works!
 </p>
+
+<div class='carousel'>
+  <a (click)="previousCharacter()">Previous</a>
+  <p>{{characters[i]?.name}}</p>
+  <a (click)="nextCharacter()">Next</a>
+</div>
