@@ -3,7 +3,7 @@
 </p>
 
 <div class='carousel'>
-  <a (click)="previousCharacter()">Previous</a>
+  <a *ngIf="i != 0" (click)="previousCharacter()">Previous</a>
   <p>{{characters[i]?.name}}</p>
-  <a (click)="nextCharacter()">Next</a>
+  <a *ngIf='showNext()' (click)="nextCharacter()">Next</a>
 </div>

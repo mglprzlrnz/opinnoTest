@@ -59,6 +59,11 @@ export class CharactersCarouselComponent implements OnInit {
         this.i = this.i + 1;
       }
     }
+
+    showNext() {
+      if (this.next === null && this.i === (this.characters.length -1)) {
+        return false } else { return true}
+    }
   
 }
 

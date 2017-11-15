@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class MovieSearchComponent implements OnInit {
 
-  searcher: string;
+  query: string;
   error: string;
   movies: Array<Movie> = [];
 
@@ -21,10 +21,10 @@ export class MovieSearchComponent implements OnInit {
 
 
   onSubmitMovieSearch(movieSearch){
-    if (!this.searcher) {
-      this.searcher = " ";
+    if (!this.query) {
+      this.query = "";
     } 
-    this.movieService.findMovies(this.searcher).subscribe(
+    this.movieService.findMovies(this.query).subscribe(
       (res) => {
         movieSearch.reset();
         this.movies = res['results']

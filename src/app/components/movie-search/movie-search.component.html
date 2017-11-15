@@ -5,8 +5,8 @@
   <form (ngSubmit)="onSubmitMovieSearch(movieSearch)" #movieSearch="ngForm">
       <h2>SEARCH A MOVIE </h2>
       <div>
-        <label for="searcher">Title: </label>
-        <input type="text"  name="searcher" [(ngModel)]="searcher">
+        <label for="query">Title: </label>
+        <input type="text"  name="query" [(ngModel)]="query">
       </div>
       <button class="btn" type="submit" >Search</button>
   </form>
