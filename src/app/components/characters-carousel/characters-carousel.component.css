@@ -1,0 +1,11 @@
+
+.carousel {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.inline {
+    display: inline-block;
+    width: 32%;
+
+}

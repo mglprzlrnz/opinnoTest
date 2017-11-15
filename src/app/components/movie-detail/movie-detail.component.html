@@ -1,6 +1,14 @@
-<p>
-  movie-detail works!
-</p>
-<p>Title: {{movie?.title}}</p>
-<p>Release Date: {{movie?.release_date}}</p>
-<p>Episode: {{movie?.episode_id}}</p>
+<div class="main">
+    <h2>Movie Details</h2>
+    <div class="details">
+        <p>Title: {{movie?.title}}</p>
+        <p>Release Date: {{movie?.release_date}}</p>
+        <p>Episode: {{movie?.episode_id}}</p>
+        <p>Opening: {{movie?.opening_crawl}}</p>
+        <p>Producer: {{movie?.producer}}</p>
+        <p>Director: {{movie?.director}}</p>
+        <button class="btn" [routerLink]="['/']" >Back</button>
+    </div>
+    
+    
+</div>

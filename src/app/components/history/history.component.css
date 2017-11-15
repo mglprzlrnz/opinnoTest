@@ -1,0 +1,10 @@
+.history {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.history thead {
+    font-weight: bold;
+
+}

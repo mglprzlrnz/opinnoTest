@@ -11,6 +11,7 @@ export class AppComponent {
   constructor(private router: Router) { }
 
   ngOnInit() {
+    localStorage.setItem('history', JSON.stringify([]))
     this.router.events
     .subscribe((event) => {
       if (event instanceof NavigationEnd) {

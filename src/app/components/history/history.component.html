@@ -1,0 +1,22 @@
+<div class="main">
+    <h2>Browsing history</h2>
+    <div *ngIf="history.length > 0">
+
+        <table class="history">
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>URL</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let row of history">
+                    <td>{{row.id}}</td>
+                    <td>{{row.url}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <button class="btn" [routerLink]="['/']" >Back</button>
+</div>
+

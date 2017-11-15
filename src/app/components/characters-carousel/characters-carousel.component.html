@@ -1,9 +1,13 @@
-<p>
-  characters-carousel works!
-</p>
-
-<div class='carousel'>
-  <a *ngIf="i != 0" (click)="previousCharacter()">Previous</a>
-  <p>{{characters[i]?.name}}</p>
-  <a *ngIf='showNext()' (click)="nextCharacter()">Next</a>
+<div class="main carousel">
+  <h2>Characters</h2>
+  <div class="inline">
+    <button class="btn" *ngIf="i != 0" (click)="previousCharacter()">Previous</button>
+  </div>
+  <div class="inline">
+      <p>{{characters[i]?.name}}</p>
+  </div>
+  <div class="inline">
+        <button class="btn" *ngIf='showNext()' (click)="nextCharacter()">Next</button>
+  </div>
 </div>
+

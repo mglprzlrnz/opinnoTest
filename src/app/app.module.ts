@@ -12,11 +12,13 @@ import { MovieSearchComponent } from './components/movie-search/movie-search.com
 import { HomeComponent } from './components/home/home.component';
 import { CharactersCarouselComponent } from './components/characters-carousel/characters-carousel.component';
 import { MovieDetailComponent } from './components/movie-detail/movie-detail.component';
+import { HistoryComponent } from './components/history/history.component';
 
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
-  { path: 'movies/:id', component: MovieDetailComponent}
+  { path: 'movies/:id', component: MovieDetailComponent},
+  { path: 'history', component: HistoryComponent}
 ]
 
 @NgModule({
@@ -25,7 +27,8 @@ const routes: Routes = [
     HomeComponent,
     MovieSearchComponent,
     CharactersCarouselComponent,
-    MovieDetailComponent
+    MovieDetailComponent,
+    HistoryComponent
   ],
   imports: [
     BrowserModule,

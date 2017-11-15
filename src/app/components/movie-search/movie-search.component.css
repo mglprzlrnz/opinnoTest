@@ -1,0 +1,18 @@
+.centered {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.result {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.result thead {
+    font-weight: bold;
+
+}
+
+
+
