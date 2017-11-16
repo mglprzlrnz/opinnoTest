@@ -1,28 +1,17 @@
 # OpinnoTest
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.2.
+This project was created in Angular 4. The aplication receives information from the api http://swapi.co/
 
-## Development server
+It is deployed in github pages. you can find it here --> https://mglprzlrnz.github.io/opinnoTest/ 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+As requested, I have created a single application web with the following features:
 
-## Code scaffolding
+In the main page you can find a Search component where you can find the Star Wars movies by title. If you write part of a title of any of the movies it will pop up under the search input. (by clicking search with the input "blanck", you will get all Star Wars movies)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+On the results, you can click on any of the titles if you wish to get more info about this particular movie.
 
-## Build
+The second component on the main page is a character carousel. By clicking "next"/"previous" you will move through all movies characters. (please note after 10 characters the app will make a new call so it might be a bit slow).  
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-## Running unit tests
+On the top left there is a button to direct you to the Browser history. This browser is stored in the LocalStorage.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
